@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url('img/bodyImg.jpg') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.galaxy{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun{
+    background: url('img/sun.png') center/cover;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    animation: sun 60s linear infinite;
+}
+
+@keyframes sun {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.earth{
+    background: url('img/earth.png') center/cover;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 300px;
+    animation: earth 30s linear infinite;
+}
+
+@keyframes earth {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.moon{
+    background: url('img/moon.jpg') center/cover;
+    position: absolute;
+    top: 100px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    animation: moon 10s linear infinite;
+}
+
+@keyframes moon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.container{
+    position: relative;
+    top: -400px;
+    right: -300px;
+    padding: 10px;
+    animation: star 5s linear infinite;
+}
+
+.star1{
+    width: 400px;
+    height: 400px;
+    background: url('img/Untitled-3.png') center/cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 1500px;
+    left: -1500px;
+    animation: star .3s linear infinite;
+}
+
+.star2{
+    width: 400px;
+    height: 400px;
+    background: url('img/Untitled-3.png') center/cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 1800px;
+    left: -1700px;
+    animation: star .3s linear infinite;
+}
+
+@keyframes star{
+    0%{
+        transform: scale(0%);
+    }
+    100%{
+        transform: scale(30%);
+    }
+}
